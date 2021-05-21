@@ -29,7 +29,7 @@
                           <tr>
                             <th scope="row">{{ $loop->index + 1 }}</th>
                             <td>{{ $item->category_name ?? 'N/A' }}</td>
-                            <td>{{ $item->created_at != NULL ? $item->created_at->diffForHumans() : 'N/A' }}</td>
+                            <td>{{ $item->created_at != NULL ? $item->created_at->diffForHumans() : 'N//A' }}</td>
                             <td>
                                 <a href="" class="btn btn-outline-primary">Edit</a>
                                 <a href="{{ url('category-delete')}}/{{ $item->id }}" class="btn btn-outline-danger">Delete</a>
